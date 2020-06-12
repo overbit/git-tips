@@ -1,6 +1,8 @@
 #!/bin/bash
 dirs=$(find . -name '.git' -type d | sed 's/\/\.git//')
 
+echo '' > clone-all.sh
+
 for dir in $dirs; do
   GIT_DIR=$dir/.git
 
